@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{text-decoration: none;}
+
+a:hover{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.extra-div h2{
+    font-size: 40px;
+    margin: 20px 0 15px 0 ;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing:4px ;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.header{
+    /* width: 100vh; */
+    height: 100vh;
+    background-image:linear-gradient(rgba(119, 18, 45, 0.2),rgba(82, 11, 104, 0.2)), url('../images/bg3.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    /* opacity: 80%; */
+    position: relative;
+    clip-path: polygon(100% 0%, 100% 85%, 50% 100% ,0 85%, 0 0 );
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #29030f 0%, #44081a 0%, #25050c 10%) ;
+    z-index: -1;
+    opacity: 0.1%;
+
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #924e63 0%, #5a4048 0%, #e2ddde 10%) ;
+    z-index: -1;
+    opacity: 0.1%;
+}
+
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 10px 20px;
+
+}
+
+.nav-item a{
+    color:black !important;
+    font-weight: bold;
+}
+
+.container a{
+    color: black!important;
+    font-weight: bold;
+}
+
+.font_bont{
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.6;
+}
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: rgb(53, 6, 71);
+    text-align: center;
+    position: relative;
+    font-family: 'Viaoda Libre', cursive;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.center-div{
+    width: 100%; 
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+
+}
+
+.header-buttons a{
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 6px 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+    background-color: rgb(88, 3, 29);
+
+}
+
+.header-buttons a:hover {
+    border: 1px solid black;
+    border-radius: 100px;
+    margin: 0 5px;
+    padding: 6px 20px;
+    color: rgb(214, 127, 189);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color:black;   
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.center-div p{
+    /* font-size: 1 rem; */
+    padding: 10px 2px ;
+
+}
+
+.header-extradiv{
+    width: 100%;
+    height: auto;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.extra-div{
+    background: #d1e8e2;
+    /* background: white; */
+    border:medium none ;
+    padding: 50px!important;
+    /* margin: 2px; */
+    border-radius: 5px;
+    transition: 0.3 ;
+}
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-10px);   
+}
